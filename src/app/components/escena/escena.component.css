@@ -1,0 +1,16 @@
+#frase{
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.class {
+    color: blue;
+}
+.classno2 {
+    background-color: #FFC0CB;
+}
+
+.button{
+    border: 1px solid black;
+    background-color: #DCDCDC;
+}

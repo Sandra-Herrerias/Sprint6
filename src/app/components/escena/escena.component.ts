@@ -7,6 +7,9 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class EscenaComponent {
   @Input() frases:string[];
+
+  currentSentence: boolean;
+
   constructor() {
     
       
@@ -14,5 +17,13 @@ export class EscenaComponent {
 
   ngOnInit():void {
 
+  }
+
+  prev(){
+    console.log("prev");
+  }
+
+  next(){
+    console.log("next");
   }
 }
