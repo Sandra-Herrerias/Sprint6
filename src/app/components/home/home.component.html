@@ -1,3 +1,16 @@
-<app-escena [frases]="frasesHome"></app-escena>
-
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center mt-3">
+            <h1>Benvinguda</h1>
+        </div>
+        <div class="col-md-12 text-center mt-3">
+            <p>Descripció del projecte</p>
+        </div>
+        <div class="col-md-12  text-center mt-3">
+            <button (click)="show = !show" class="btn btn-primary">Començar</button>
+        </div>
+    </div>
+    <div *ngIf="show">
+        <app-escena [frases]="frasesHome"></app-escena>
+    </div>
+</div>

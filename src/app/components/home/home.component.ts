@@ -8,5 +8,6 @@ import frases from '../../../assets/frases.json';
 export class HomeComponent {
 frasesHome= frases.historiques;
 
+  show: boolean;
 
 }
