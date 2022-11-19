@@ -1,10 +1,10 @@
-<div class="container">
+<div>
     <div class="row text-center mt-3">
         <div class="col button py-3 fw-bold" (click)='prev()'>
             Anterior</div>
         <div class="col button py-3 fw-bold" (click)='next()'>Següent</div>
     </div>
-    <div class="mt-3 row text-center" *ngFor="let frase of frases; let i = index" [ngClass]="{'classRed': this.currentSentence===frase.txt}" id="frase">
+    <div class="mt-3 row text-center" *ngFor="let frase of frases; let i = index" [ngClass]="{'classRed': this.currentSentence===frase.txt, 'classWhite': this.currentSentence!=frase.txt}" id="frase">
         <p class="align-middle">{{frase.txt}}</p>
     </div>
 </div>

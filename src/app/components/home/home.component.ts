@@ -6,8 +6,25 @@ import frases from '../../../assets/frases.json';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-frasesHome= frases.historiques;
+frasesHome = frases.historiques;
 
+showPhoto: string;
   show: boolean;
 
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.showPhoto = this.frasesHome[0].img;
+  }
+
+
+
+    /**
+ * Executes info that gets from child component 
+ * @param $event 
+ */
+     getPhoto($event: string) {
+      this.showPhoto = $event;
+    }
 }
