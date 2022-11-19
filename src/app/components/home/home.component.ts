@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import frases from '../../../assets/frases.json';
 @Component({
   selector: 'app-home',
@@ -6,11 +6,10 @@ import frases from '../../../assets/frases.json';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-frasesHome = frases.historiques;
+  frasesHome = frases.historiques;
 
-showPhoto: string;
+  showPhoto: string;
   show: boolean;
-
 
   constructor() { }
 
@@ -18,13 +17,11 @@ showPhoto: string;
     this.showPhoto = this.frasesHome[0].img;
   }
 
-
-
-    /**
- * Executes info that gets from child component 
- * @param $event 
- */
-     getPhoto($event: string) {
-      this.showPhoto = $event;
-    }
+  /**
+* Executes info that gets from child component 
+* @param $event 
+*/
+  getPhoto($event: string) {
+    this.showPhoto = $event;
+  }
 }
