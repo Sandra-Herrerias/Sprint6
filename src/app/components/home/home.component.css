@@ -1,3 +1,19 @@
     #btnStart {
         width: 50%;
     }
+    
+    .full-page-width {
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    .benvinguda {
+        color: white;
+    }
